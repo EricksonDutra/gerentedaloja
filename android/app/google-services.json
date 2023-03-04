@@ -1,0 +1,97 @@
+{
+  "project_info": {
+    "project_number": "169919525149",
+    "project_id": "loja-virtual-9fab5",
+    "storage_bucket": "loja-virtual-9fab5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:169919525149:android:9b01dbdd8a9b22526871f4",
+        "android_client_info": {
+          "package_name": "br.com.erickdevs.gerentedaloja"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "169919525149-131pnfij87dr3j4mpeh8ql1j8qh4vc9v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCx6GhXj3jZgP-2ybXikVKIKCLaN4_-THg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "169919525149-131pnfij87dr3j4mpeh8ql1j8qh4vc9v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:169919525149:android:bb2024893ca0a10d6871f4",
+        "android_client_info": {
+          "package_name": "br.com.erickdevs.lojavirtual.lojaonline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "169919525149-131pnfij87dr3j4mpeh8ql1j8qh4vc9v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCx6GhXj3jZgP-2ybXikVKIKCLaN4_-THg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "169919525149-131pnfij87dr3j4mpeh8ql1j8qh4vc9v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:169919525149:android:84d4a67ee3778d2e6871f4",
+        "android_client_info": {
+          "package_name": "com.erickdevs.managestore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "169919525149-131pnfij87dr3j4mpeh8ql1j8qh4vc9v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCx6GhXj3jZgP-2ybXikVKIKCLaN4_-THg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "169919525149-131pnfij87dr3j4mpeh8ql1j8qh4vc9v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
