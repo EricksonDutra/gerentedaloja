@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gerentedaloja/blocs/login_bloc.dart';
 import 'package:gerentedaloja/widgets/input_field.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -9,6 +10,7 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+  final _loginBloc = LoginBloc();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,25 +30,38 @@ class _LoginScreenState extends State<LoginScreen> {
                     size: 150,
                     color: Colors.pinkAccent,
                   ),
-                  const InputField(
+                  InputField(
                     icon: Icons.person_outline,
                     hint: "Usuário",
                     obscure: false,
+                    stream: _loginBloc.outEmail,
+                    onChanged: _loginBloc.changeEmail,
                   ),
-                  const InputField(
+                  InputField(
                     icon: Icons.lock_outlined,
                     hint: "Senha",
                     obscure: true,
+                    stream: _loginBloc.outPassword,
+                    onChanged: _loginBloc.changePassword,
                   ),
                   const SizedBox(height: 32),
-                  SizedBox(
-                    height: 50,
-                    child: ElevatedButton(
-                        onPressed: () {},
-                        style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.pinkAccent),
-                        child: const Text('Entrar')),
-                  ),
+                  StreamBuilder<Object>(
+                      stream: _loginBloc.outSubmitValid,
+                      builder: (context, snapshot) {
+                        return SizedBox(
+                          height: 50,
+                          child: ElevatedButton(
+                            onPressed: snapshot.hasData ? () {} : null,
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Colors.pinkAccent,
+                              textStyle: const TextStyle(color: Colors.white),
+                              disabledBackgroundColor:
+                                  Colors.pinkAccent.withAlpha(140),
+                            ),
+                            child: const Text('Entrar'),
+                          ),
+                        );
+                      }),
                 ],
               ),
             ),
